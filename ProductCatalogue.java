@@ -8,5 +8,25 @@
  *
  * @author samueliregbu
  */
-public class ProductCatalogue  {
-		}
+public class ProductCatalogue implements Iterable<Product>
+{
+    private ArrayList<Product> Products;
+    
+    public ProductCatalogue()
+    {
+        Products = new ArrayList<Product>();
+    }
+    
+    public void addProduct(String Name1, Double Price1, int Product_ID1)
+    {
+        
+        Product product = new Product(Name1, Price1, Product_ID1);
+        Products.add(product);
+    }
+    
+    @Override
+    public Iterator<Product> iterator()
+    {
+        return Products.iterator();
+    }
+}

@@ -15,5 +15,32 @@ public class Customer {
     private float creditRating;
     private float discountRating;
     
-   	
-}
+    public Customer(String Name1, String Address1, float Credit_Rating1, float Discount_Rating1)
+    {
+        this.name = Name1;
+        this.address = Address1;
+        this.creditRating = Credit_Rating1;
+        this.discountRating = Discount_Rating1;
+    }
+    
+    public float getCreditRating()
+    {
+        return creditRating;
+    }
+    
+    public String getName()
+    {
+        return name;
+    }
+    
+    public String getAddress()
+    {
+        return address;
+    }
+    
+    public float getDiscountRating()
+    {
+        return discountRating;
+    }
+    
+    
