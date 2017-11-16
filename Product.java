@@ -13,13 +13,22 @@ public class Product {
     private Double price;
     private int productID;
     
+    
+    
     public Product(String Name1, Double Price1, int Product_ID1)
     {
-        this.name = Name1;
-        this.price = Price1;
-        this.productID = Product_ID1;
+        name = Name1;
+        price = Price1;
+        productID = Product_ID1;
     }
     
+    public Product ()
+    {
+        name = "";
+        price = 0.00;
+        productID = 0;
+    }
+
     public String getName()
     {
         return name;
