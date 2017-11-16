@@ -30,4 +30,17 @@ public class ProductCatalogue implements Iterable<Product>
     {
         return Products.iterator();
     }
+    public boolean search(Product searchProduct)
+    {
+        boolean exist = true;
+        if (!Products.contains(searchProduct))
+            exist = false;
+        
+        return exist;
+    }
+    
+    public ArrayList<Product> getCatalogue()
+    {
+        return Products;
+    }
 }
