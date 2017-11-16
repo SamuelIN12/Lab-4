@@ -10,10 +10,16 @@
  */
 public class CorporateCustomer extends Customer
 {
-    public CorporateCustomer(String Name1, String Address1, float Credit_Rating1, float Discount_Rating1) {
+    private String contactName;
+
+    public CorporateCustomer(String Name1, String Address1, float Credit_Rating1, float Discount_Rating1, String contact_Name)
+    {
         super(Name1, Address1, Credit_Rating1, Discount_Rating1);
-        
+         contactName = contact_Name;
     }
     
-    private String contactName;
+    private String getcontactName()
+    {
+        return contactName;
+    }
 }
