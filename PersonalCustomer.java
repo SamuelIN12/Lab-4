@@ -10,9 +10,17 @@
  */
 public class PersonalCustomer extends Customer
 {
-    
-    public PersonalCustomer(String Name1, String Address1, float Credit_Rating, float Discount_Rating) {
-        super(Name1, Address1, Credit_Rating, Discount_Rating);
-    }
     private int creditCardNumber;
+    
+    public PersonalCustomer(String Name1, String Address1, float Credit_Rating, float Discount_Rating, int creditCard_Number)
+    {
+        super(Name1, Address1, Credit_Rating, Discount_Rating);
+        creditCardNumber = creditCard_Number;
+    }
+    
+    
+    public int getCreditCardNumber()
+    {
+        return creditCardNumber;
+    }
 }
